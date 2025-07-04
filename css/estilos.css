@@ -1,0 +1,12 @@
+body{
+	background:#5DADE2;
+	margin: 1;
+}
+header, footer{
+	background: white;
+	padding: 0.5em;
+}
+h1{
+	font-family: Arial;
+	color: #0D47A1;
+}

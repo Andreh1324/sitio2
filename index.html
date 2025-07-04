@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" type="text/css" href="css/estilos.css">
+     <link rel="stylesheet" type="text/css" href="css/responsiveslides.css">
+     <link rel="stylesheet" type="text/css" href="css/themes.css">
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+     <script src="js/responsiveslides.min.js"></script>
+ 	<title>uso de etiquetas semanticas y slides</title>
+</head>
+<body>
+     <header>
+          <img src="img/nestle.png" width="170" >
+     	<h1>*EMPRESA NESTLE*</h1>
+     </header>
+      <nav>
+      	<ul>
+               <li>Inicio</li>  
+               <li>Servicios</li>   
+               <li>Contactos</li>   
+               <li>Registrarme</li>   
+          </ul>
+      </nav>
+      <main>
+     <script>
+          $(function (){
+          //slideshow 1
+          $("#slider1").responsiveSlides({
+          auto: false,
+          pager: true,
+          nav:true,
+          speed:500,
+          maxwidth:800,
+          namespace:"centered-btns"
+          });
+          });
+
+     </script>
+     <div id="wrapper">
+          <!--Slideshow -->
+          <div class="rslides_container"></div>
+               <ul class="rslides" id="slider1">
+                    <li><img src="img/nas.tl.jpeg" width="200px" height="100px" alt=""></li>
+                    <li><img src="img/nes.ag.jpg"  width="200px" height="100px"alt=""></li>
+                    <li><img src="img/nes.em.jpg" width="200px" height="50px"alt=""></li>
+               </ul>              
+          </div>
+     </div>
+      	
+
+      </main>
+      <footer>
+      	
+      	
+      </footer>
+</body>
+</html>
